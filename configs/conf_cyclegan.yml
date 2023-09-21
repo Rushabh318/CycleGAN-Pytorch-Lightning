@@ -1,0 +1,24 @@
+data:
+  base_dir: "/work/au321555/thesis/Data/CycleGAN"
+  data_dir:
+    A: "real"
+    B: "synthetic"
+  img_size: 400
+  num_workers: 4
+
+experiment:
+  name: "cyclegan_WZL-run"
+  version: 2
+  batch_size: 2
+  num_epochs: 120
+  shuffle: False
+  seed: 42
+  resume_checkpoint: "/home/au321555/Thesis/code/ct-pore-analysis/logs/cyclegan_WZL-run/version_2/checkpoints/last.ckpt"
+
+logging: 
+  path: "/work/au321555/thesis/Models/cycleGAN/"
+
+checkpoints:
+  path: "/work/au321555/thesis/Models/cycleGAN/"
+  freq: 2
+
